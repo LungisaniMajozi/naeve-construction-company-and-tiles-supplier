@@ -22,18 +22,18 @@ export default function Header() {
     <>
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            {/* Logo with Orange Accent Border */}
+          <div className="flex justify-between items-center h-16">
+            {/* Logo with Orange Accent Border - Reduced Size */}
             <Link to="/" className="flex items-center shrink-0">
-              <div className="bg-white p-2.5 rounded-lg border-b-4 border-orange-500 shadow-sm hover:shadow-md hover:border-orange-600 transition-all duration-300">
+              <div className="bg-white p-1.5 rounded-lg border-b-2 border-orange-500 shadow-sm hover:shadow-md hover:border-orange-600 transition-all duration-300">
                 <img
                   src="/ncc_logo.png"
                   alt="NCC Logo"
-                  className="h-12 sm:h-14 w-auto object-contain"
+                  className="h-8 sm:h-10 w-auto object-contain"
                   onError={(e) => {
                     e.target.onerror = null;
                     e.target.src =
-                      "https://placehold.co/280x80/f8fafc/cbd5e1?text=NCC+LOGO";
+                      "https://placehold.co/200x60/f8fafc/cbd5e1?text=NCC+LOGO";
                   }}
                 />
               </div>
@@ -66,10 +66,10 @@ export default function Header() {
                 href="https://wa.me/27670458628?text=Hello%20NCC,%20I%20would%20like%20to%20make%20an%20enquiry."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white font-bold px-4 lg:px-5 py-2.5 rounded-lg transition-all shadow-md hover:shadow-lg flex items-center gap-2 shrink-0"
+                className="bg-green-500 hover:bg-green-600 text-white font-bold px-4 lg:px-5 py-2 rounded-lg transition-all shadow-md hover:shadow-lg flex items-center gap-2 shrink-0 text-sm"
               >
                 <svg
-                  className="w-4 h-4 lg:w-5 lg:h-5"
+                  className="w-4 h-4"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -83,7 +83,7 @@ export default function Header() {
                 onClick={() => setIsCartOpen(true)}
                 className="relative p-2 text-gray-600 hover:text-orange-600 transition-colors shrink-0"
               >
-                <ShoppingCart className="w-5 h-5 lg:w-6 lg:h-6" />
+                <ShoppingCart className="w-5 h-5" />
                 {totalItems > 0 && (
                   <span className="absolute -top-1 -right-1 bg-orange-600 text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center">
                     {totalItems}
@@ -98,7 +98,7 @@ export default function Header() {
                 onClick={() => setIsCartOpen(true)}
                 className="relative p-2 text-gray-600 hover:text-orange-600 transition-colors"
               >
-                <ShoppingCart className="w-6 h-6" />
+                <ShoppingCart className="w-5 h-5" />
                 {totalItems > 0 && (
                   <span className="absolute -top-1 -right-1 bg-orange-600 text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center">
                     {totalItems}
@@ -122,7 +122,7 @@ export default function Header() {
 
           {/* Mobile Navigation */}
           {isOpen && (
-            <div className="md:hidden absolute top-20 left-0 w-full bg-white border-b border-gray-100 shadow-xl py-4 px-4 flex flex-col gap-3">
+            <div className="md:hidden absolute top-16 left-0 w-full bg-white border-b border-gray-100 shadow-xl py-4 px-4 flex flex-col gap-3">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
