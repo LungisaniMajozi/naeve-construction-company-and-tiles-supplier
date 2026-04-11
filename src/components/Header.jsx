@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { ShoppingCart, X, Menu } from "lucide-react";
+import { ShoppingCart, X, Menu, Sparkles } from "lucide-react";
 import { useCart } from "../context/CartContext";
 import CartDrawer from "./CartDrawer";
 
@@ -12,6 +12,7 @@ export default function Header() {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Products", path: "/products" },
+    { name: "Combos", path: "/combos", icon: <Sparkles className="w-4 h-4" /> },
     { name: "Services", path: "/services" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
@@ -22,18 +23,20 @@ export default function Header() {
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            {/* Logo - Properly sized to fit navbar */}
+            {/* Logo with Orange Accent Border */}
             <Link to="/" className="flex items-center shrink-0">
-              <img
-                src="/ncc logo.png"
-                alt="NCC Logo"
-                className="h-auto w-[180px] sm:w-[220px] md:w-[260px] object-contain"
-                onError={(e) => {
-                  e.target.onerror = null;
-                  e.target.src =
-                    "https://placehold.co/300x80/f8fafc/cbd5e1?text=NCC+LOGO";
-                }}
-              />
+              <div className="bg-white p-2.5 rounded-lg border-b-4 border-orange-500 shadow-sm hover:shadow-md hover:border-orange-600 transition-all duration-300">
+                <img
+                  src="/ncc_logo.png"
+                  alt="NCC Logo"
+                  className="h-12 sm:h-14 w-auto object-contain"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src =
+                      "https://placehold.co/280x80/f8fafc/cbd5e1?text=NCC+LOGO";
+                  }}
+                />
+              </div>
             </Link>
 
             {/* Desktop Navigation */}
@@ -42,12 +45,15 @@ export default function Header() {
                 <Link
                   key={link.name}
                   to={link.path}
-                  className={`text-sm font-bold tracking-wide uppercase transition-colors relative py-2 ${
+                  className={`text-sm font-bold tracking-wide uppercase transition-colors relative py-2 flex items-center gap-1 ${
                     location.pathname === link.path
                       ? "text-orange-600"
                       : "text-gray-500 hover:text-orange-600"
                   }`}
                 >
+                  {link.icon && (
+                    <span className="text-orange-500">{link.icon}</span>
+                  )}
                   {link.name}
                   {location.pathname === link.path && (
                     <span className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-orange-600 rounded-full"></span>
@@ -88,7 +94,6 @@ export default function Header() {
 
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center gap-2">
-              {/* Mobile Cart Icon */}
               <button
                 onClick={() => setIsCartOpen(true)}
                 className="relative p-2 text-gray-600 hover:text-orange-600 transition-colors"
@@ -115,7 +120,7 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Mobile Navigation Dropdown */}
+          {/* Mobile Navigation */}
           {isOpen && (
             <div className="md:hidden absolute top-20 left-0 w-full bg-white border-b border-gray-100 shadow-xl py-4 px-4 flex flex-col gap-3">
               {navLinks.map((link) => (
@@ -123,12 +128,15 @@ export default function Header() {
                   key={link.name}
                   to={link.path}
                   onClick={() => setIsOpen(false)}
-                  className={`block py-3 px-4 rounded-lg font-semibold text-lg transition-colors ${
+                  className={`block py-3 px-4 rounded-lg font-semibold text-lg transition-colors flex items-center gap-2 ${
                     location.pathname === link.path
                       ? "bg-orange-50 text-orange-600"
                       : "text-gray-700 hover:bg-gray-50 hover:text-orange-600"
                   }`}
                 >
+                  {link.icon && (
+                    <span className="text-orange-500">{link.icon}</span>
+                  )}
                   {link.name}
                 </Link>
               ))}

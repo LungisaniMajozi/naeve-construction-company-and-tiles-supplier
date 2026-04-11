@@ -81,7 +81,7 @@ export const products = [
     code: "MSP66053M",
     finish: "Matt",
     image: "/tiles/msp66053m.jpg",
-    price: "Contact for Quote",
+    price: "R160/m² | R230/box",
   },
   {
     id: 10,
@@ -90,7 +90,7 @@ export const products = [
     code: "MSP66001M",
     finish: "Matt",
     image: "/tiles/msp66001m.jpg",
-    price: "Contact for Quote",
+    price: "R160/m² | R230/box",
   },
   {
     id: 11,
@@ -99,7 +99,7 @@ export const products = [
     code: "MSP66010M",
     finish: "Matt",
     image: "/tiles/msp66010m.jpg",
-    price: "Contact for Quote",
+    price: "R160/m² | R230/box",
   },
   {
     id: 12,
@@ -108,7 +108,7 @@ export const products = [
     code: "MSP66017M",
     finish: "Matt",
     image: "/tiles/msp66017m.jpg",
-    price: "Contact for Quote",
+    price: "R160/m² | R230/box",
   },
   {
     id: 13,
@@ -117,7 +117,7 @@ export const products = [
     code: "MSP66049M",
     finish: "Matt",
     image: "/tiles/msp66049m1.jpg",
-    price: "Contact for Quote",
+    price: "R160/m² | R230/box",
   },
   {
     id: 14,
@@ -144,7 +144,7 @@ export const products = [
     code: "MSG66002M",
     finish: "Matt",
     image: "/tiles/msg66002m.jpg",
-    price: "Contact for Quote",
+    price: "R139/m² | R200/box",
   },
   {
     id: 17,
@@ -153,7 +153,7 @@ export const products = [
     code: "MSG66006M",
     finish: "Matt",
     image: "/tiles/msg66006m.jpg",
-    price: "Contact for Quote",
+    price: "R139/m² | R200/box",
   },
 
   // ==================== 600x1200mm TILES ====================
@@ -164,7 +164,7 @@ export const products = [
     code: "NRP61003",
     finish: "Glazed",
     image: "/tiles/nrp61003.jpg",
-    price: "Contact for Quote",
+    price: "R208/m² | R300/box",
   },
   {
     id: 19,
@@ -173,7 +173,7 @@ export const products = [
     code: "NRP61004",
     finish: "Glazed",
     image: "/tiles/nrp61004.jpg",
-    price: "Contact for Quote",
+    price: "R208/m² | R300/box",
   },
   {
     id: 20,
@@ -182,7 +182,7 @@ export const products = [
     code: "NRP61005",
     finish: "Glazed",
     image: "/tiles/nrp61005.jpg",
-    price: "Contact for Quote",
+    price: "R208/m² | R300/box",
   },
   {
     id: 21,
@@ -191,7 +191,7 @@ export const products = [
     code: "NRP61006",
     finish: "Glazed",
     image: "/tiles/nrp61006.jpg",
-    price: "Contact for Quote",
+    price: "R208/m² | R300/box",
   },
   {
     id: 22,
@@ -200,7 +200,7 @@ export const products = [
     code: "NRP61007",
     finish: "Glazed",
     image: "/tiles/nrp61007.jpg",
-    price: "Contact for Quote",
+    price: "R208/m² | R300/box",
   },
   {
     id: 23,
@@ -209,7 +209,7 @@ export const products = [
     code: "NRP61008",
     finish: "Glazed",
     image: "/tiles/nrp61008.jpg",
-    price: "Contact for Quote",
+    price: "R208/m² | R300/box",
   },
   {
     id: 24,
@@ -218,7 +218,7 @@ export const products = [
     code: "NRP61009",
     finish: "Glazed",
     image: "/tiles/nrp61009.jpg",
-    price: "Contact for Quote",
+    price: "R208/m² | R300/box",
   },
   {
     id: 25,
@@ -227,7 +227,7 @@ export const products = [
     code: "NRP61010",
     finish: "Glazed",
     image: "/tiles/nrp61010.jpg",
-    price: "Contact for Quote",
+    price: "R208/m² | R300/box",
   },
   {
     id: 26,
@@ -236,7 +236,7 @@ export const products = [
     code: "NRP61011",
     finish: "Glazed",
     image: "/tiles/nrp61011.jpg",
-    price: "Contact for Quote",
+    price: "R208/m² | R300/box",
   },
   {
     id: 27,
@@ -245,7 +245,7 @@ export const products = [
     code: "NRP61012",
     finish: "Glazed",
     image: "/tiles/nrp61012.jpg",
-    price: "Contact for Quote",
+    price: "R208/m² | R300/box",
   },
   {
     id: 28,
@@ -254,7 +254,7 @@ export const products = [
     code: "NRP61013",
     finish: "Glazed",
     image: "/tiles/nrp61013.jpg",
-    price: "Contact for Quote",
+    price: "R208/m² | R300/box",
   },
   {
     id: 29,
@@ -263,7 +263,7 @@ export const products = [
     code: "NRP61014",
     finish: "Glazed",
     image: "/tiles/nrp61014.jpg",
-    price: "Contact for Quote",
+    price: "R208/m² | R300/box",
   },
   {
     id: 30,
@@ -272,7 +272,7 @@ export const products = [
     code: "NRP61015",
     finish: "Glazed",
     image: "/tiles/nrp61015.jpg",
-    price: "Contact for Quote",
+    price: "R208/m² | R300/box",
   },
   {
     id: 31,
@@ -281,7 +281,7 @@ export const products = [
     code: "NRP61016",
     finish: "Glazed",
     image: "/tiles/nrp61016.jpg",
-    price: "Contact for Quote",
+    price: "R208/m² | R300/box",
   },
   {
     id: 32,
@@ -290,6 +290,42 @@ export const products = [
     code: "MSM61015M",
     finish: "Matt",
     image: "/tiles/msm61015m.jpg",
+    price: "Contact for Quote",
+  },
+  {
+    id: 39,
+    name: "Porcelain Matt - MSM61015M Variant 2",
+    category: "600x1200mm",
+    code: "MSM61015M-2",
+    finish: "Matt",
+    image: "/tiles/msm61015m2.jpg",
+    price: "Contact for Quote",
+  },
+  {
+    id: 40,
+    name: "Porcelain Matt - MSM61015M Variant 3",
+    category: "600x1200mm",
+    code: "MSM61015M-3",
+    finish: "Matt",
+    image: "/tiles/msm61015m3.jpg",
+    price: "Contact for Quote",
+  },
+  {
+    id: 51,
+    name: "Porcelain Matt - MSM61015M Variant 4",
+    category: "600x1200mm",
+    code: "MSM61015M-4",
+    finish: "Matt",
+    image: "/tiles/msm61015m4.jpg",
+    price: "Contact for Quote",
+  },
+  {
+    id: 52,
+    name: "Porcelain Matt - MSM61015M Variant 5",
+    category: "600x1200mm",
+    code: "MSM61015M-5",
+    finish: "Matt",
+    image: "/tiles/msm61015m5.jpg",
     price: "Contact for Quote",
   },
 
