@@ -1,4 +1,4 @@
-import { useCart } from "../context/CartContext";
+﻿import { useCart } from "../context/CartContext";
 import { X, Plus, Minus, Trash2, Send } from "lucide-react";
 
 export default function CartDrawer() {
@@ -16,23 +16,23 @@ export default function CartDrawer() {
     if (cart.length === 0) return;
 
     // Professional WhatsApp Message Template
-    let message = `*🏗️ NAEVE CONSTRUCTION COMPANY & TILES SUPPLIER*\n`;
+    let message = `*ðŸ—ï¸ NAEVE CONSTRUCTION COMPANY & TILES SUPPLIER*\n`;
     message += `*QUOTE REQUEST*\n\n`;
-    message += `━━━━━━━━━━━━━━━━━━━━\n\n`;
+    message += `â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”\n\n`;
 
-    message += `*📋 ORDER DETAILS:*\n\n`;
+    message += `*ðŸ“‹ ORDER DETAILS:*\n\n`;
 
     cart.forEach((item, index) => {
       message += `${index + 1}. *${item.name}*\n`;
-      message += `   🔖 Code: ${item.code}\n`;
-      message += `   📏 Size: ${item.category}\n`;
-      message += `   🎨 Finish: ${item.finish}\n`;
-      message += `   📦 Quantity: *${item.qty}*\n`;
+      message += `   ðŸ”– Code: ${item.code}\n`;
+      message += `   ðŸ“ Size: ${item.category}\n`;
+      message += `   ðŸŽ¨ Finish: ${item.finish}\n`;
+      message += `   ðŸ“¦ Quantity: *${item.qty}*\n`;
       message += `\n`;
     });
 
-    message += `━━━━━━━━━━━━━━━━━━━━\n\n`;
-    message += `*💬 Please review and send pricing/availability.*`;
+    message += `â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”\n\n`;
+    message += `*ðŸ’¬ Please review and send pricing/availability.*`;
 
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/27670458628?text=${encodedMessage}`, "_blank");
@@ -73,7 +73,7 @@ export default function CartDrawer() {
                 <p>Your cart is empty.</p>
                 <button
                   onClick={() => setIsCartOpen(false)}
-                  className="text-orange-600 font-semibold mt-2 underline"
+                  className="text-green-600 font-semibold mt-2 underline"
                 >
                   Browse Products
                 </button>
@@ -107,7 +107,7 @@ export default function CartDrawer() {
 
                       <button
                         onClick={() => addToCart(item)}
-                        className="p-1 bg-orange-100 text-orange-600 rounded hover:bg-orange-200 transition"
+                        className="p-1 bg-green-100 text-green-600 rounded hover:bg-green-200 transition"
                       >
                         <Plus className="w-4 h-4" />
                       </button>

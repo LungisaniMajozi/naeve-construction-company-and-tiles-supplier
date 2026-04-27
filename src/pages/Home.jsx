@@ -6,22 +6,22 @@ export default function Home() {
     <>
       {/* Hero Section with Background Image */}
       <section 
-        className="relative py-32 px-4 min-h-[600px] flex items-center justify-center bg-gray-900 bg-center bg-cover bg-no-repeat"
+        className="relative py-32 px-4 min-h-[600px] flex items-center justify-center bg-green-950 bg-center bg-cover bg-no-repeat"
         style={{ backgroundImage: "url('/home.png')" }}
       >
         {/* Gradient Overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/80 to-gray-900/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-green-950/70 via-green-900/40 to-green-900/10"></div>
         
         <div className="max-w-7xl mx-auto w-full relative z-10 text-left">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-sm font-semibold mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-sm font-semibold mb-6">
               <ShieldCheck className="w-4 h-4" />
               SABS Approved Quality
             </div>
             
             <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight leading-[1.1]">
               Premium Tiles &<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-600">
                 Construction
               </span> Solutions
             </h1>
@@ -35,7 +35,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/products"
-                className="group bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-lg hover:shadow-orange-500/25 flex items-center justify-center gap-2"
+                className="group bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-lg hover:shadow-green-500/25 flex items-center justify-center gap-2"
               >
                 Browse Collection
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -56,22 +56,22 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Why Choose NCC?</h2>
-            <div className="w-20 h-1.5 bg-orange-500 mx-auto rounded-full"></div>
+            <div className="w-20 h-1.5 bg-green-500 mx-auto rounded-full"></div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                icon: <Grid className="w-8 h-8 text-orange-600" />,
+                icon: <Grid className="w-8 h-8 text-green-600" />,
                 title: "Premium Tiles",
                 desc: "600x600mm & 600x1200mm porcelain, glazed & matt finishes",
-                bgColor: "bg-orange-100/50"
+                bgColor: "bg-green-100/50"
               },
               {
-                icon: <Hammer className="w-8 h-8 text-blue-600" />,
+                icon: <Hammer className="w-8 h-8 text-green-600" />,
                 title: "Roofing Materials",
                 desc: "IBR sheeting, concrete tiles, trusses & high-quality fixings",
-                bgColor: "bg-blue-100/50"
+                bgColor: "bg-green-100/50"
               },
               {
                 icon: <Truck className="w-8 h-8 text-green-600" />,

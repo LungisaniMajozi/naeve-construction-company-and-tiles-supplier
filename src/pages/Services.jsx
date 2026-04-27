@@ -1,24 +1,26 @@
+import { Grid, Hammer, Truck, Lightbulb } from "lucide-react";
+
 export default function Services() {
   const services = [
     {
       title: "Tile Supply",
       desc: "Premium porcelain, glazed, and matt finish tiles in 600x600mm & 600x1200mm sizes.",
-      icon: "🏠",
+      icon: <Grid className="w-8 h-8 text-green-600" />,
     },
     {
       title: "Roofing Materials",
       desc: "IBR sheeting, concrete tiles, trusses, and fixings for complete roof solutions.",
-      icon: "🛡️",
+      icon: <Hammer className="w-8 h-8 text-green-600" />,
     },
     {
       title: "Bulk Delivery",
       desc: "Fast, reliable delivery directly to your site or home in Clayville and surrounding areas.",
-      icon: "🚚",
+      icon: <Truck className="w-8 h-8 text-green-600" />,
     },
     {
       title: "Expert Consultation",
       desc: "Not sure what you need? We help you choose the right materials for your project.",
-      icon: "💡",
+      icon: <Lightbulb className="w-8 h-8 text-green-600" />,
     },
   ];
 
@@ -41,7 +43,9 @@ export default function Services() {
               key={i}
               className="bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:shadow-md transition-all hover:-translate-y-1"
             >
-              <div className="text-4xl mb-4">{service.icon}</div>
+              <div className="w-16 h-16 rounded-2xl bg-green-100/50 flex items-center justify-center mb-6">
+                {service.icon}
+              </div>
               <h3 className="text-xl font-bold text-slate-800 mb-2">
                 {service.title}
               </h3>

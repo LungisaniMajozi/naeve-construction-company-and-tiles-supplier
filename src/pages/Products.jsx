@@ -1,4 +1,4 @@
-// Replace the content of your Products.jsx with this:
+﻿// Replace the content of your Products.jsx with this:
 import { useState } from "react";
 import { products } from "../data/products";
 import ProductCard from "../components/ProductCard";
@@ -36,8 +36,8 @@ export default function Products() {
               onClick={() => setFilter(cat)}
               className={`px-6 py-2 rounded-full text-sm font-semibold transition-all shadow-sm ${
                 filter === cat
-                  ? "bg-orange-600 text-white shadow-md"
-                  : "bg-white text-gray-600 hover:bg-orange-50 hover:text-orange-600"
+                  ? "bg-green-600 text-white shadow-md"
+                  : "bg-white text-gray-600 hover:bg-green-50 hover:text-green-600"
               }`}
             >
               {cat}

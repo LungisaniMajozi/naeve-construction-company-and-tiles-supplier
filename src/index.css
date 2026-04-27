@@ -1,4 +1,4 @@
-/* src/index.css */
+﻿/* src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -39,10 +39,10 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-orange-600 hover:bg-orange-700 text-white font-semibold px-6 py-3 rounded-btn transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 active:scale-95;
+    @apply bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-btn transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 active:scale-95;
   }
   .btn-outline {
-    @apply border-2 border-orange-600 text-orange-600 hover:bg-orange-50 font-semibold px-6 py-3 rounded-btn transition-all;
+    @apply border-2 border-green-600 text-green-600 hover:bg-green-50 font-semibold px-6 py-3 rounded-btn transition-all;
   }
   .card {
     @apply bg-white rounded-card shadow-soft hover:shadow-lg transition-all border border-gray-100 overflow-hidden;

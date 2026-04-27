@@ -1,4 +1,4 @@
-// Replace the content of your ProductCard.jsx with this:
+﻿// Replace the content of your ProductCard.jsx with this:
 import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
@@ -29,7 +29,7 @@ export default function ProductCard({ product }) {
 
         {/* Content Area */}
         <div className="p-5 flex-1 flex flex-col">
-          <h3 className="text-lg font-bold text-slate-800 mb-2 group-hover:text-orange-600 transition-colors">
+          <h3 className="text-lg font-bold text-slate-800 mb-2 group-hover:text-green-600 transition-colors">
             {product.name}
           </h3>
 
@@ -37,20 +37,20 @@ export default function ProductCard({ product }) {
             <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-100 text-slate-600">
               Code: {product.code}
             </span>
-            <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-orange-50 text-orange-700">
+            <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-green-50 text-green-700">
               {product.finish}
             </span>
           </div>
 
           {/* PRICE DISPLAY - Added this section */}
           <div className="mb-4 mt-auto pt-2 border-t border-gray-100">
-            <p className="text-xl font-bold text-orange-600">{product.price}</p>
+            <p className="text-xl font-bold text-green-600">{product.price}</p>
           </div>
 
           {/* Button */}
           <button
             onClick={() => addToCart(product)}
-            className="w-full bg-slate-900 text-white font-semibold py-3 rounded-xl hover:bg-orange-600 transition-colors flex items-center justify-center gap-2 active:scale-95"
+            className="w-full bg-slate-900 text-white font-semibold py-3 rounded-xl hover:bg-green-600 transition-colors flex items-center justify-center gap-2 active:scale-95"
           >
             <Plus className="w-5 h-5" />
             Add to Quote

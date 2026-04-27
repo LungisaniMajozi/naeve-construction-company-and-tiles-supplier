@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import {
   Play,
   X,
@@ -16,61 +16,61 @@ export default function Combos() {
   const combos = [
     {
       id: 1,
-      title: "✨ 600x600 Gloss Combo Special",
+      title: "âœ¨ 600x600 Gloss Combo Special",
       description: "Everything you need for a glossy tile finish",
       videoSrc: "/videos/combo1.mp4",
       thumbnail: "/videos/combo1.jpeg",
-      accent: "from-orange-400 to-orange-600",
+      accent: "from-green-400 to-green-600",
       comboDetails: [
-        "✓ 20 boxes tiles (600x600mm Gloss)",
-        "✓ 10 bags tile cement",
-        "✓ 2 x grout (1kg each)",
-        "✓ 2 x bonding liquid (1L each)",
-        "✓ 2 packs spacers",
+        "âœ“ 20 boxes tiles (600x600mm Gloss)",
+        "âœ“ 10 bags tile cement",
+        "âœ“ 2 x grout (1kg each)",
+        "âœ“ 2 x bonding liquid (1L each)",
+        "âœ“ 2 packs spacers",
       ],
       comboPrice: "R4,400",
       savings: "Bulk discount applied",
       whatsappMessage:
-        "Hi NCC! I'm interested in the ✨ 600x600 Gloss Combo Special (20 boxes tiles + cement + grout + bonding liquid + spacers) for R4,400. Please confirm availability and delivery.",
+        "Hi NCC! I'm interested in the âœ¨ 600x600 Gloss Combo Special (20 boxes tiles + cement + grout + bonding liquid + spacers) for R4,400. Please confirm availability and delivery.",
     },
     {
       id: 2,
-      title: "🏆 600x600 Porcelain Combo Special",
+      title: "ðŸ† 600x600 Porcelain Combo Special",
       description: "Glazed/Polished porcelain bundle for premium spaces",
       videoSrc: "/videos/combo2.mp4",
       thumbnail: "/videos/combo2.jpeg",
       accent: "from-blue-400 to-blue-600",
       comboDetails: [
-        "✓ 40 boxes tiles (600x600mm Glazed/Polished)",
-        "✓ 20 bags tile cement",
-        "✓ 4 x bonding liquid (1L each)",
-        "✓ 4 x grout (1kg each)",
-        "✓ 2 aluminium strips (10mm)",
+        "âœ“ 40 boxes tiles (600x600mm Glazed/Polished)",
+        "âœ“ 20 bags tile cement",
+        "âœ“ 4 x bonding liquid (1L each)",
+        "âœ“ 4 x grout (1kg each)",
+        "âœ“ 2 aluminium strips (10mm)",
       ],
       comboPrice: "R9,600",
       savings: "Bulk discount applied",
       whatsappMessage:
-        "Hi NCC! I'm interested in the 🏆 600x600 Porcelain Combo Special (40 boxes tiles + cement + bonding liquid + grout + aluminium strips) for R9,600. Please confirm availability and delivery.",
+        "Hi NCC! I'm interested in the ðŸ† 600x600 Porcelain Combo Special (40 boxes tiles + cement + bonding liquid + grout + aluminium strips) for R9,600. Please confirm availability and delivery.",
     },
     {
       id: 3,
-      title: "💎 600x1200 Porcelain Combo Special",
+      title: "ðŸ’Ž 600x1200 Porcelain Combo Special",
       description: "Large format glazed/polished porcelain for luxury finishes",
       videoSrc: "/videos/combo3.mp4",
       thumbnail: "/videos/comobo3.png",
       accent: "from-pink-400 to-pink-600",
       comboDetails: [
-        "✓ 10 boxes tiles (600x1200mm Glazed/Polished)",
-        "✓ 5 bags tile Glue",
-        "✓ 5 litre bonding liquid",
-        "✓ 5kg grout",
-        "✓ 1 packs spacers",
-        "✓ 1 aluminium strip edge (10mm)",
+        "âœ“ 10 boxes tiles (600x1200mm Glazed/Polished)",
+        "âœ“ 5 bags tile Glue",
+        "âœ“ 5 litre bonding liquid",
+        "âœ“ 5kg grout",
+        "âœ“ 1 packs spacers",
+        "âœ“ 1 aluminium strip edge (10mm)",
       ],
       comboPrice: "R2,499.99",
       savings: "Best value for large projects",
       whatsappMessage:
-        "Hi NCC! I'm interested in the 💎 600x1200 Porcelain Combo Special (50 boxes tiles + cement + bonding liquid + grout + spacers + aluminium strips) for R14,000. Please confirm availability and delivery.",
+        "Hi NCC! I'm interested in the ðŸ’Ž 600x1200 Porcelain Combo Special (50 boxes tiles + cement + bonding liquid + grout + spacers + aluminium strips) for R14,000. Please confirm availability and delivery.",
     },
   ];
 
@@ -84,12 +84,12 @@ export default function Combos() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-orange-50 text-orange-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+          <div className="inline-flex items-center gap-2 bg-green-50 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
             <Sparkles className="w-4 h-4" />
             Exclusive Combo Deals
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            Save More with NCC Combos ✨
+            Save More with NCC Combos âœ¨
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
             Bundle tiles, cement, grout & accessories for exclusive discounts.
@@ -137,7 +137,7 @@ export default function Combos() {
                 {/* Play Button */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="bg-white/95 backdrop-blur-sm p-5 rounded-full shadow-2xl group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-                    <Play className="w-10 h-10 text-orange-600 fill-orange-600" />
+                    <Play className="w-10 h-10 text-green-600 fill-green-600" />
                   </div>
                 </div>
 
@@ -160,7 +160,7 @@ export default function Combos() {
               {/* Combo Details */}
               <div className="p-6 flex-1 flex flex-col">
                 <div className="flex items-start justify-between mb-3">
-                  <h3 className="text-lg font-bold text-slate-800 group-hover:text-orange-600 transition-colors">
+                  <h3 className="text-lg font-bold text-slate-800 group-hover:text-green-600 transition-colors">
                     {combo.title}
                   </h3>
                 </div>
@@ -176,7 +176,7 @@ export default function Combos() {
                       key={i}
                       className="flex items-start gap-2 text-sm text-gray-700"
                     >
-                      <Package className="w-4 h-4 text-orange-500 mt-0.5 shrink-0" />
+                      <Package className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
                       {detail}
                     </li>
                   ))}
@@ -184,7 +184,7 @@ export default function Combos() {
 
                 {/* Price */}
                 <div className="mb-4 pt-4 border-t border-gray-100">
-                  <p className="text-2xl font-bold text-orange-600">
+                  <p className="text-2xl font-bold text-green-600">
                     {combo.comboPrice}
                   </p>
                   <p className="text-xs text-gray-500">All items included</p>
@@ -198,7 +198,7 @@ export default function Combos() {
                   <MessageCircle className="w-5 h-5" />
                   Request via WhatsApp
                   <span className="group-hover/btn:translate-x-1 transition-transform">
-                    →
+                    â†’
                   </span>
                 </button>
               </div>
@@ -210,7 +210,7 @@ export default function Combos() {
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-black to-gray-900 rounded-3xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-3">
-              🎵 Want More Combo Deals?
+              ðŸŽµ Want More Combo Deals?
             </h3>
             <p className="text-gray-300 mb-6">
               Follow us on TikTok for exclusive flash deals, behind-the-scenes

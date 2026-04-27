@@ -1,4 +1,4 @@
-import { Quote } from "lucide-react";
+﻿import { Quote } from "lucide-react";
 
 export default function Testimonials() {
   const testimonials = [
@@ -44,8 +44,8 @@ export default function Testimonials() {
       role: "Architect",
       quote:
         "Precision and consistency are key for my firm's projects. NCC Tiles guarantees both, alongside phenomenal customer support whenever we need custom sizes.",
-      bgColor: "bg-orange-100",
-      textColor: "text-orange-600",
+      bgColor: "bg-green-100",
+      textColor: "text-green-600",
     },
     {
       initial: "A",

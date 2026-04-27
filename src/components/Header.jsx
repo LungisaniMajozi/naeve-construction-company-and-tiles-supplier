@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ShoppingCart, X, Menu, Sparkles } from "lucide-react";
 import { useCart } from "../context/CartContext";
@@ -24,9 +24,9 @@ export default function Header() {
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            {/* Logo with Orange Accent Border - Reduced Size */}
+            {/* Logo with Green Accent Border - Reduced Size */}
             <Link to="/" className="flex items-center shrink-0">
-              <div className="bg-white p-1.5 rounded-lg border-b-2 border-orange-500 shadow-sm hover:shadow-md hover:border-orange-600 transition-all duration-300">
+              <div className="bg-white p-1.5 rounded-lg border-b-2 border-green-500 shadow-sm hover:shadow-md hover:border-green-600 transition-all duration-300">
                 <img
                   src="/ncc_logo.png"
                   alt="NCC Logo"
@@ -48,16 +48,16 @@ export default function Header() {
                   to={link.path}
                   className={`text-sm font-bold tracking-wide uppercase transition-colors relative py-2 flex items-center gap-1 ${
                     location.pathname === link.path
-                      ? "text-orange-600"
-                      : "text-gray-500 hover:text-orange-600"
+                      ? "text-green-600"
+                      : "text-gray-500 hover:text-green-600"
                   }`}
                 >
                   {link.icon && (
-                    <span className="text-orange-500">{link.icon}</span>
+                    <span className="text-green-500">{link.icon}</span>
                   )}
                   {link.name}
                   {location.pathname === link.path && (
-                    <span className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-orange-600 rounded-full"></span>
+                    <span className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-green-600 rounded-full"></span>
                   )}
                 </Link>
               ))}
@@ -82,11 +82,11 @@ export default function Header() {
               {/* Cart Icon */}
               <button
                 onClick={() => setIsCartOpen(true)}
-                className="relative p-2 text-gray-600 hover:text-orange-600 transition-colors shrink-0"
+                className="relative p-2 text-gray-600 hover:text-green-600 transition-colors shrink-0"
               >
                 <ShoppingCart className="w-5 h-5" />
                 {totalItems > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-orange-600 text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center">
+                  <span className="absolute -top-1 -right-1 bg-green-600 text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center">
                     {totalItems}
                   </span>
                 )}
@@ -97,11 +97,11 @@ export default function Header() {
             <div className="md:hidden flex items-center gap-2">
               <button
                 onClick={() => setIsCartOpen(true)}
-                className="relative p-2 text-gray-600 hover:text-orange-600 transition-colors"
+                className="relative p-2 text-gray-600 hover:text-green-600 transition-colors"
               >
                 <ShoppingCart className="w-5 h-5" />
                 {totalItems > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-orange-600 text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center">
+                  <span className="absolute -top-1 -right-1 bg-green-600 text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center">
                     {totalItems}
                   </span>
                 )}
@@ -131,12 +131,12 @@ export default function Header() {
                   onClick={() => setIsOpen(false)}
                   className={`block py-3 px-4 rounded-lg font-semibold text-lg transition-colors flex items-center gap-2 ${
                     location.pathname === link.path
-                      ? "bg-orange-50 text-orange-600"
-                      : "text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                      ? "bg-green-50 text-green-600"
+                      : "text-gray-700 hover:bg-gray-50 hover:text-green-600"
                   }`}
                 >
                   {link.icon && (
-                    <span className="text-orange-500">{link.icon}</span>
+                    <span className="text-green-500">{link.icon}</span>
                   )}
                   {link.name}
                 </Link>

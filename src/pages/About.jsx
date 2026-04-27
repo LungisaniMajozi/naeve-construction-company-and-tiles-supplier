@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { Award, ShieldCheck, Users } from "lucide-react";
 
 export default function About() {
@@ -14,8 +14,8 @@ export default function About() {
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-            <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-6">
-              <Award className="w-6 h-6 text-orange-600" />
+            <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+              <Award className="w-6 h-6 text-green-600" />
             </div>
             <h2 className="text-xl font-bold text-slate-900 mb-4">
               10+ Years Heritage
@@ -51,7 +51,7 @@ export default function About() {
         </div>
 
         <div className="bg-slate-900 rounded-3xl shadow-xl p-10 text-center relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-orange-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20"></div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-green-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20"></div>
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500 rounded-full blur-[80px] opacity-20 -ml-20 -mb-20"></div>
           <div className="relative z-10">
             <h2 className="text-3xl font-bold text-white mb-6">
@@ -59,7 +59,7 @@ export default function About() {
             </h2>
             <Link
               to="/contact"
-              className="inline-block bg-orange-500 text-white font-bold px-8 py-4 rounded-xl hover:bg-orange-600 hover:-translate-y-1 transition-all shadow-lg hover:shadow-orange-500/30"
+              className="inline-block bg-green-500 text-white font-bold px-8 py-4 rounded-xl hover:bg-green-600 hover:-translate-y-1 transition-all shadow-lg hover:shadow-green-500/30"
             >
               Contact Us Today
             </Link>
