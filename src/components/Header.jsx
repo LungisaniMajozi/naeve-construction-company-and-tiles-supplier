@@ -15,6 +15,7 @@ export default function Header() {
     { name: "Combos", path: "/combos", icon: <Sparkles className="w-4 h-4" /> },
     { name: "Services", path: "/services" },
     { name: "About", path: "/about" },
+    { name: "Testimonials", path: "/testimonials" },
     { name: "Contact", path: "/contact" },
   ];
 
