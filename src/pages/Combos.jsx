@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import {
   Play,
   X,
@@ -16,61 +16,61 @@ export default function Combos() {
   const combos = [
     {
       id: 1,
-      title: "âœ¨ 600x600 Gloss Combo Special",
+      title: "✨ 600x600 Gloss Combo Special",
       description: "Everything you need for a glossy tile finish",
       videoSrc: "/videos/combo1.mp4",
       thumbnail: "/videos/combo1.jpeg",
       accent: "from-green-400 to-green-600",
       comboDetails: [
-        "âœ“ 20 boxes tiles (600x600mm Gloss)",
-        "âœ“ 10 bags tile cement",
-        "âœ“ 2 x grout (1kg each)",
-        "âœ“ 2 x bonding liquid (1L each)",
-        "âœ“ 2 packs spacers",
+        "✓ 20 boxes tiles (600x600mm Gloss)",
+        "✓ 10 bags tile cement",
+        "✓ 2 x grout (1kg each)",
+        "✓ 2 x bonding liquid (1L each)",
+        "✓ 2 packs spacers",
       ],
       comboPrice: "R4,400",
       savings: "Bulk discount applied",
       whatsappMessage:
-        "Hi NCC! I'm interested in the âœ¨ 600x600 Gloss Combo Special (20 boxes tiles + cement + grout + bonding liquid + spacers) for R4,400. Please confirm availability and delivery.",
+        "Hi NCC! I'm interested in the ✨ 600x600 Gloss Combo Special (20 boxes tiles + cement + grout + bonding liquid + spacers) for R4,400. Please confirm availability and delivery.",
     },
     {
       id: 2,
-      title: "ðŸ† 600x600 Porcelain Combo Special",
+      title: "🏆 600x600 Porcelain Combo Special",
       description: "Glazed/Polished porcelain bundle for premium spaces",
       videoSrc: "/videos/combo2.mp4",
       thumbnail: "/videos/combo2.jpeg",
-      accent: "from-blue-400 to-blue-600",
+      accent: "from-green-400 to-green-600",
       comboDetails: [
-        "âœ“ 40 boxes tiles (600x600mm Glazed/Polished)",
-        "âœ“ 20 bags tile cement",
-        "âœ“ 4 x bonding liquid (1L each)",
-        "âœ“ 4 x grout (1kg each)",
-        "âœ“ 2 aluminium strips (10mm)",
+        "✓ 40 boxes tiles (600x600mm Glazed/Polished)",
+        "✓ 20 bags tile cement",
+        "✓ 4 x bonding liquid (1L each)",
+        "✓ 4 x grout (1kg each)",
+        "✓ 2 aluminium strips (10mm)",
       ],
       comboPrice: "R9,600",
       savings: "Bulk discount applied",
       whatsappMessage:
-        "Hi NCC! I'm interested in the ðŸ† 600x600 Porcelain Combo Special (40 boxes tiles + cement + bonding liquid + grout + aluminium strips) for R9,600. Please confirm availability and delivery.",
+        "Hi NCC! I'm interested in the 🏆 600x600 Porcelain Combo Special (40 boxes tiles + cement + bonding liquid + grout + aluminium strips) for R9,600. Please confirm availability and delivery.",
     },
     {
       id: 3,
-      title: "ðŸ’Ž 600x1200 Porcelain Combo Special",
+      title: "💎 600x1200 Porcelain Combo Special",
       description: "Large format glazed/polished porcelain for luxury finishes",
       videoSrc: "/videos/combo3.mp4",
       thumbnail: "/videos/comobo3.png",
-      accent: "from-pink-400 to-pink-600",
+      accent: "from-green-400 to-green-600",
       comboDetails: [
-        "âœ“ 10 boxes tiles (600x1200mm Glazed/Polished)",
-        "âœ“ 5 bags tile Glue",
-        "âœ“ 5 litre bonding liquid",
-        "âœ“ 5kg grout",
-        "âœ“ 1 packs spacers",
-        "âœ“ 1 aluminium strip edge (10mm)",
+        "✓ 10 boxes tiles (600x1200mm Glazed/Polished)",
+        "✓ 5 bags tile Glue",
+        "✓ 5 litre bonding liquid",
+        "✓ 5kg grout",
+        "✓ 1 packs spacers",
+        "✓ 1 aluminium strip edge (10mm)",
       ],
       comboPrice: "R2,499.99",
       savings: "Best value for large projects",
       whatsappMessage:
-        "Hi NCC! I'm interested in the ðŸ’Ž 600x1200 Porcelain Combo Special (50 boxes tiles + cement + bonding liquid + grout + spacers + aluminium strips) for R14,000. Please confirm availability and delivery.",
+        "Hi NCC! I'm interested in the 💎 600x1200 Porcelain Combo Special (50 boxes tiles + cement + bonding liquid + grout + spacers + aluminium strips) for R14,000. Please confirm availability and delivery.",
     },
   ];
 
@@ -89,7 +89,7 @@ export default function Combos() {
             Exclusive Combo Deals
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            Save More with NCC Combos âœ¨
+            Save More with NCC Combos ✨
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
             Bundle tiles, cement, grout & accessories for exclusive discounts.
@@ -144,7 +144,7 @@ export default function Combos() {
                 {/* Heart Icon */}
                 <div className="absolute top-4 right-4">
                   <div className="bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-lg">
-                    <Heart className="w-5 h-5 text-pink-500 fill-pink-100" />
+                    <Heart className="w-5 h-5 text-green-500 fill-green-100" />
                   </div>
                 </div>
 
@@ -198,7 +198,7 @@ export default function Combos() {
                   <MessageCircle className="w-5 h-5" />
                   Request via WhatsApp
                   <span className="group-hover/btn:translate-x-1 transition-transform">
-                    â†’
+                    →
                   </span>
                 </button>
               </div>
@@ -210,7 +210,7 @@ export default function Combos() {
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-black to-gray-900 rounded-3xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-3">
-              ðŸŽµ Want More Combo Deals?
+              🎵 Want More Combo Deals?
             </h3>
             <p className="text-gray-300 mb-6">
               Follow us on TikTok for exclusive flash deals, behind-the-scenes
