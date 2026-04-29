@@ -337,7 +337,7 @@ export const products = [
     code: "IBR-DA02",
     finish: "Chromadek",
     image: "/roof/ibrda02.jpg",
-    price: "Per Meter",
+    price: "From R138 per meter",
   },
   {
     id: 34,
