@@ -346,7 +346,7 @@ export const products = [
     code: "CORR-DA04",
     finish: "Colorbond",
     image: "/roof/corrugatedda04.jpg",
-    price: "Per Meter",
+    price: "From R138 per meter",
   },
   {
     id: 35,
@@ -355,7 +355,7 @@ export const products = [
     code: "ROOF-DA05",
     finish: "Standard",
     image: "/roof/da05.jpg",
-    price: "Per Sheet",
+    price: "From R138 per meter",
   },
   {
     id: 36,
@@ -364,7 +364,7 @@ export const products = [
     code: "ROOF-DA08",
     finish: "Standard",
     image: "/roof/da08.jpg",
-    price: "Per Sheet",
+    price: "From R138 per meter",
   },
   {
     id: 37,
@@ -373,7 +373,7 @@ export const products = [
     code: "ROOF-DA03",
     finish: "Standard",
     image: "/roof/da03.jpg",
-    price: "Per Sheet",
+    price: "From R138 per meter",
   },
   {
     id: 38,
@@ -382,6 +382,6 @@ export const products = [
     code: "WIDESPAN-DA07",
     finish: "Colorbond",
     image: "/roof/widespanda07.jpg",
-    price: "Per Meter",
+    price: "From R138 per meter",
   },
 ];
